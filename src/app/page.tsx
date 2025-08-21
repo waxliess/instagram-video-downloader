@@ -91,52 +91,52 @@ export default function HomePage() {
           <div className="mt-6 md:mt-12 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg md:rounded-xl shadow-sm p-4 md:p-6 hover-lift gradient-border">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4">
               <p className="text-gray-600 dark:text-gray-300 text-xs md:text-sm text-center md:text-left">
-                &copy; {new Date().getFullYear()} | Oktay Yavuz tarafından geliştirilmiştir
+                &copy; {new Date().getFullYear()} | Feqan tarafından geliştirilmiştir
               </p>
               
               <div className="flex flex-wrap justify-center md:justify-end gap-3 md:gap-4">
                 <a
-                  href="https://github.com/oktayyavuz"
+                  href="https://github.com/waxliess"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 md:gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs md:text-sm"
                   aria-label="GitHub"
                 >
                   <Github className="w-4 h-4 md:w-5 md:h-5" />
-                  <span>oktayyavuz</span>
+                  <span>Feqan</span>
                 </a>
                 
                 <a
-                  href="https://instagram.com/oktayyavuz_1"
+                  href="https://instagram.com/feqan_gerayl1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 md:gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs md:text-sm"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4 md:w-5 md:h-5" />
-                  <span>oktayyavuz_1</span>
+                  <span>feqan_gerayl1</span>
                 </a>
                 
                 <a
-                  href="https://instagram.com/oktaywithdev"
+                  href="https://instagram.com/feqan_gerayl1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 md:gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs md:text-sm"
                   aria-label="Instagram 2"
                 >
                   <Instagram className="w-4 h-4 md:w-5 md:h-5" />
-                  <span>oktaywithdev</span>
+                  <span>Feqan</span>
                 </a>
                 
                 <a
-                  href="https://twitter.com/oktayyavuz_0"
+                  href="https://twitter.com/waxliess"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 md:gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs md:text-sm"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-4 h-4 md:w-5 md:h-5" />
-                  <span>oktayyavuz_0</span>
+                  <span>waxliess</span>
                 </a>
               </div>
             </div>

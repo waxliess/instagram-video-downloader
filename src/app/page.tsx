@@ -118,17 +118,6 @@ export default function HomePage() {
                 </a>
                 
                 <a
-                  href="https://instagram.com/feqan_gerayl1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 md:gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-xs md:text-sm"
-                  aria-label="Instagram 2"
-                >
-                  <Instagram className="w-4 h-4 md:w-5 md:h-5" />
-                  <span>Feqan</span>
-                </a>
-                
-                <a
                   href="https://twitter.com/waxliess"
                   target="_blank"
                   rel="noopener noreferrer"

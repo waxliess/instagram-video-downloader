@@ -3,6 +3,6 @@ export const InstagramQueryKey = {
 } as const;
 
 export const ServerEndpoints = {
-  GetByPostURL: "video", 
+  GetByPostURL: "video",
+  GetByTikTokURL: "tiktok",
 } as const;
-

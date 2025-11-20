@@ -1,6 +1,6 @@
 "use client";
 
-import { InstagramVideoForm } from "@/features/instagram/components/form";
+import { DownloaderForm } from "@/features/downloader/components/form";
 import { Download, Github, Instagram, Twitter, Heart } from "lucide-react";
 
 export default function HomePage() {
@@ -13,10 +13,10 @@ export default function HomePage() {
             <div className="p-5 md:p-8 lg:p-10 flex flex-col md:flex-row items-center">
               <div className="md:w-2/3 mb-5 md:mb-0 md:pr-6 lg:pr-8">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-4">
-                  Instagram Video İndirici
+                  Instagram & TikTok Video İndirici
                 </h1>
                 <p className="text-blue-100 text-sm md:text-base lg:text-lg">
-                  Instagram videolarını yüksek kalitede, hızlı ve ücretsiz olarak indirebilirsiniz.
+                  Instagram ve TikTok videolarını yüksek kalitede, hızlı ve ücretsiz olarak indirebilirsiniz.
                 </p>
                 <div className="flex mt-4 md:mt-6 space-x-2 md:space-x-3">
                   <div className="bg-white/20 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-lg flex items-center">
@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-8">
             {/* Form Bölümü */}
             <div className="md:col-span-3 order-2 md:order-1">
-              <InstagramVideoForm />
+              <DownloaderForm />
             </div>
             
             {/* Nasıl Kullanılır */}
@@ -56,8 +56,8 @@ export default function HomePage() {
                   <li className="flex items-start">
                     <div className="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 font-bold rounded-full w-5 h-5 md:w-6 md:h-6 flex items-center justify-center mr-2 md:mr-3 mt-0.5 flex-shrink-0 text-xs md:text-sm">1</div>
                     <div>
-                      <p className="font-medium text-sm md:text-base">Instagram Linkini Kopyalayın</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">İndirmek istediğiniz Instagram video linkini kopyalayın</p>
+                      <p className="font-medium text-sm md:text-base">Instagram veya TikTok Linkini Kopyalayın</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">İndirmek istediğiniz Instagram veya TikTok video linkini kopyalayın</p>
                     </div>
                   </li>
                   

@@ -2,14 +2,24 @@ import { useMutation } from "@tanstack/react-query";
 
 import { AsyncReturnType } from "@/types";
 
-import { getVideoInfo } from "./requests";
+import { getInstagramVideoInfo, getTikTokVideoInfo } from "./requests";
 
-export function useVideoInfo() {
+export function useInstagramVideoInfo() {
   return useMutation<
-    AsyncReturnType<typeof getVideoInfo>,
+    AsyncReturnType<typeof getInstagramVideoInfo>,
     Error,
-    Parameters<typeof getVideoInfo>[0]
+    Parameters<typeof getInstagramVideoInfo>[0]
   >({
-    mutationFn: getVideoInfo,
+    mutationFn: getInstagramVideoInfo,
+  });
+}
+
+export function useTikTokVideoInfo() {
+  return useMutation<
+    AsyncReturnType<typeof getTikTokVideoInfo>,
+    Error,
+    Parameters<typeof getTikTokVideoInfo>[0]
+  >({
+    mutationFn: getTikTokVideoInfo,
   });
 }

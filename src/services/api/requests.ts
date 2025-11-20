@@ -1,12 +1,10 @@
 import { apiClient } from "@/lib/api-client";
-
 import { CustomError } from "@/lib/errors";
-
 import { APIResponse, VideoInfo } from "@/types";
-
+import { TikTokVideo } from "@/features/tiktok/types";
 import { ServerEndpoints } from "./constants";
 
-export async function getVideoInfo({
+export async function getInstagramVideoInfo({
   postUrl,
 }: {
   postUrl: string;
@@ -25,4 +23,25 @@ export async function getVideoInfo({
   const data = json.data;
 
   return data;
+}
+
+export async function getTikTokVideoInfo({
+  postUrl,
+}: {
+  postUrl: string;
+}): Promise<TikTokVideo> {
+  const res = await apiClient.post(
+    `${ServerEndpoints.GetByTikTokURL}`,
+    {
+      json: { url: postUrl },
+    }
+  );
+
+  const json = await res.json();
+
+  if (json.code !== 0) {
+    throw new CustomError(json.msg);
+  }
+
+  return json;
 }

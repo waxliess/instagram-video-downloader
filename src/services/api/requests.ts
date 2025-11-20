@@ -33,7 +33,10 @@ export async function getTikTokVideoInfo({
   const res = await apiClient.post(
     `${ServerEndpoints.GetByTikTokURL}`,
     {
-      json: { url: postUrl },
+      body: JSON.stringify({ url: postUrl }),
+      headers: {
+        "Content-Type": "application/json",
+      },
     }
   );
 
